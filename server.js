@@ -34,6 +34,13 @@ app.get('/about',(req,res)=>{
 	});
 });
 
+app.get('/training',(req,res)=>{
+	res.render('training.hbs',{
+		title:'Training page',
+		description:'This is a trainig page created for testing purpose'
+	});
+});
+
 app.listen(port,()=>{
 	console.log(`Server is running on ${port}`);
 });
